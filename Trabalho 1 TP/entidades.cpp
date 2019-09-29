@@ -17,4 +17,26 @@ public:
 
 };
 
-class Reserva
+class Reserva {
+    Codigo_reserva codigo;
+    Assento assento;
+    Bagagem bagagem;
+};
+
+class Carona {
+    Codigo_carona codigo;
+    Cidade cidade_origem;
+    Estado estado_origem;
+    Cidade cidade_destino;
+    Estado estado_destino;
+    Data data;
+    Duracao duracao;
+    Vagas vagas;
+    Preco preco;
+};
+
+class Conta {
+    Codigo_banco banco;
+    Agencia agencia;
+    Conta conta;
+};

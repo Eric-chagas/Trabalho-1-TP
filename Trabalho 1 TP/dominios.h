@@ -27,8 +27,8 @@ public:
     int getNumero();
 };
 
-class Banco {
-//Codigo de banco (XXX)
+class Codigo_banco {
+//Codigo de Banco (XXX)
 private:
     string codigo;
 public:
@@ -39,8 +39,8 @@ public:
     string getCodigo();
 };
 
-class Carona {
-//Codigo de carona (XXXX)
+class Codigo_carona {
+//Codigo de Carona (XXXX)
 private:
     string codigo;
 public:
@@ -51,8 +51,8 @@ public:
     string getCodigo();
 };
 
-class Reserva {
-//Codigo de reserva (XXXXX)
+class Codigo_reserva {
+//Codigo de Reserva (XXXXX)
 private:
     string codigo;
 public:
@@ -150,8 +150,8 @@ public:
     string getNome();
 };
 
-class Agencia {
-/*Numero de agencia (XXXX-Y), onde
+class Numero_agencia {
+/*Numero de Agencia (XXXX-Y), onde
 X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
 private:
     string numero;
@@ -166,8 +166,8 @@ public:
     int getDigito();
 };
 
-class Conta {
-/*Numero de conta (XXXXXX-Y), onde
+class Numero_conta {
+/*Numero de Conta (XXXXXX-Y), onde
 X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
 private:
     string numero;
@@ -183,7 +183,7 @@ public:
 };
 
 class Preco {
-//Preco da carona
+//Preco da Carona
 private:
     double preco;
 

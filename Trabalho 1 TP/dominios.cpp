@@ -44,13 +44,13 @@ int Bagagem::getNumero()
     return this->numero;
 }
 
-//Classe BANCO
+//Classe Codigo_banco
 
 /** @brief (one liner)
   *
   * (documentation goes here)
   */
-void Banco::setCodigo(string codigo)
+void Codigo_banco::setCodigo(string codigo)
 {
     this->codigo = codigo;
 }
@@ -59,18 +59,18 @@ void Banco::setCodigo(string codigo)
   *
   * (documentation goes here)
   */
-string Banco::getCodigo()
+string Codigo_banco::getCodigo()
 {
     return this->codigo;
 }
 
-//Classe CARONA
+//Classe Codigo_carona
 
 /** @brief (one liner)
   *
   * (documentation goes here)
   */
-void Carona::setCodigo(string codigo)
+void Codigo_carona::setCodigo(string codigo)
 {
     this->codigo = codigo;
 }
@@ -79,18 +79,18 @@ void Carona::setCodigo(string codigo)
   *
   * (documentation goes here)
   */
-string Carona::getCodigo()
+string Codigo_carona::getCodigo()
 {
     return this->codigo;
 }
 
-//Classe RESERVA
+//Classe Codigo_reserva
 
 /** @brief (one liner)
   *
   * (documentation goes here)
   */
-void Reserva::setCodigo(string codigo)
+void Codigo_reserva::setCodigo(string codigo)
 {
     this->codigo = codigo;
 }
@@ -99,7 +99,7 @@ void Reserva::setCodigo(string codigo)
   *
   * (documentation goes here)
   */
-string Reserva::getCodigo()
+string Codigo_reserva::getCodigo()
 {
     return this->codigo;
 }
@@ -262,13 +262,13 @@ string Nome::getNome()
     return this->nome;
 }
 
-//Classe AGENCIA
+//Classe Numero_agencia
 
 /** @brief (one liner)
   *
   * (documentation goes here)
   */
-void Agencia::setNumero(string numero)
+void Numero_agencia::setNumero(string numero)
 {
     this->numero = numero;
 }
@@ -277,7 +277,7 @@ void Agencia::setNumero(string numero)
   *
   * (documentation goes here)
   */
-void Agencia::setDigito(int digito)
+void Numero_agencia::setDigito(int digito)
 {
     this->digito_verificador = digito;
 }
@@ -286,7 +286,7 @@ void Agencia::setDigito(int digito)
   *
   * (documentation goes here)
   */
-string Agencia::getNumero()
+string Numero_agencia::getNumero()
 {
     return this->numero;
 }
@@ -295,18 +295,18 @@ string Agencia::getNumero()
   *
   * (documentation goes here)
   */
-int Agencia::getDigito()
+int Numero_agencia::getDigito()
 {
     return this->digito_verificador;
 }
 
-//Classe CONTA
+//Classe Numero_conta
 
 /** @brief (one liner)
   *
   * (documentation goes here)
   */
-void Conta::setNumero(string numero)
+void Numero_conta::setNumero(string numero)
 {
     this->numero = numero;
 }
@@ -315,7 +315,7 @@ void Conta::setNumero(string numero)
   *
   * (documentation goes here)
   */
-void Conta::setDigito(int digito)
+void Numero_conta::setDigito(int digito)
 {
     this->digito = digito;
 }
@@ -324,7 +324,7 @@ void Conta::setDigito(int digito)
   *
   * (documentation goes here)
   */
-string Conta::getNumero()
+string Numero_conta::getNumero()
 {
     return this->numero;
 }
@@ -333,7 +333,7 @@ string Conta::getNumero()
   *
   * (documentation goes here)
   */
-int Conta::getDigito()
+int Numero_conta::getDigito()
 {
     return this->digito;
 }
