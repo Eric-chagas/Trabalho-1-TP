@@ -18,12 +18,18 @@ public:
 };
 
 class Reserva {
+
+private:
     Codigo_reserva codigo;
     Assento assento;
     Bagagem bagagem;
+
+public:
 };
 
 class Carona {
+
+private:
     Codigo_carona codigo;
     Cidade cidade_origem;
     Estado estado_origem;
@@ -33,10 +39,16 @@ class Carona {
     Duracao duracao;
     Vagas vagas;
     Preco preco;
+
+public:
 };
 
 class Conta {
+
+private:
     Codigo_banco banco;
-    Agencia agencia;
-    Conta conta;
+    Numero_agencia agencia;
+    Numero_conta numero;
+
+public:
 };
