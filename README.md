@@ -1,6 +1,6 @@
 # Trabalho 1 - Técnicas de Programação 1
 
-###Outubro de 2019
+### Outubro de 2019
 
 #### Aluno: Eric Chagas de Oliveira
 #### Matrícula: 18/0119508
