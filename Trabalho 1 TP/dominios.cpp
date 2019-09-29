@@ -32,7 +32,7 @@ char Assento::getTipo()
   */
 void Bagagem::setNumero(int numero)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -52,7 +52,7 @@ int Bagagem::getNumero()
   */
 void Banco::setCodigo(string codigo)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -72,7 +72,7 @@ string Banco::getCodigo()
   */
 void Carona::setCodigo(string codigo)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -92,7 +92,7 @@ string Carona::getCodigo()
   */
 void Reserva::setCodigo(string codigo)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -112,7 +112,7 @@ string Reserva::getCodigo()
   */
 void Cidade::setCidade(string cidade)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -132,7 +132,7 @@ string Cidade::getCidade()
   */
 void Cpf::setCpf(string cpf)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -152,7 +152,7 @@ string Cpf::getCpf()
   */
 void Data::setData(string data)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -172,7 +172,7 @@ string Data::getData()
   */
 void Duracao::setDuracao(int duracao)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -192,7 +192,7 @@ int Duracao::getDuracao()
   */
 void Estado::setEstado(string estado)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -212,7 +212,7 @@ string Estado::getEstado()
   */
 void Email::setLocal(string local)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -221,7 +221,7 @@ void Email::setLocal(string local)
   */
 void Email::setDominio(string dominio)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -250,7 +250,7 @@ string Email::getDominio()
   */
 void Nome::setNome(string nome)
 {
-
+    this. =;
 }
 
 /** @brief (one liner)
@@ -259,7 +259,7 @@ void Nome::setNome(string nome)
   */
 string Nome::getNome()
 {
-
+    return this.nome;
 }
 
 //Classe AGENCIA
@@ -270,7 +270,7 @@ string Nome::getNome()
   */
 void Agencia::setNumero(string numero)
 {
-
+    this.numero = numero;
 }
 
 /** @brief (one liner)
@@ -279,7 +279,7 @@ void Agencia::setNumero(string numero)
   */
 void Agencia::setDigito(int digito)
 {
-
+    this.digito_verificador = digito;
 }
 
 /** @brief (one liner)
@@ -288,7 +288,7 @@ void Agencia::setDigito(int digito)
   */
 string Agencia::getNumero()
 {
-
+    return this.numero;
 }
 
 /** @brief (one liner)
@@ -297,7 +297,7 @@ string Agencia::getNumero()
   */
 int Agencia::getDigito()
 {
-
+    return this.digito_verificador;
 }
 
 //Classe CONTA
@@ -308,7 +308,7 @@ int Agencia::getDigito()
   */
 void Conta::setNumero(string numero)
 {
-
+    this.numero = numero;
 }
 
 /** @brief (one liner)
@@ -317,7 +317,7 @@ void Conta::setNumero(string numero)
   */
 void Conta::setDigito(int digito)
 {
-
+    this.digito = digito;
 }
 
 /** @brief (one liner)
@@ -326,7 +326,7 @@ void Conta::setDigito(int digito)
   */
 string Conta::getNumero()
 {
-
+    return this.numero;
 }
 
 /** @brief (one liner)
@@ -335,7 +335,7 @@ string Conta::getNumero()
   */
 int Conta::getDigito()
 {
-
+    return this.digito;
 }
 
 //Classe PRECO
@@ -346,7 +346,7 @@ int Conta::getDigito()
   */
 void Preco::setPreco(double preco)
 {
-
+    this.preco = preco;
 }
 
 /** @brief (one liner)
@@ -355,7 +355,7 @@ void Preco::setPreco(double preco)
   */
 double Preco::getPreco()
 {
-
+    return this.preco;
 }
 
 //Classe TELEFONE
@@ -366,7 +366,7 @@ double Preco::getPreco()
   */
 void Telefone::setDdi(string ddi)
 {
-
+    this.ddi = ddi;
 }
 
 /** @brief (one liner)
@@ -375,7 +375,7 @@ void Telefone::setDdi(string ddi)
   */
 void Telefone::setDdd(string ddd)
 {
-
+    this.ddd = ddd;
 }
 
 /** @brief (one liner)
@@ -384,7 +384,7 @@ void Telefone::setDdd(string ddd)
   */
 void Telefone::setNumero(string numero)
 {
-
+    this.numero = numero;
 }
 
 /** @brief (one liner)
@@ -393,7 +393,7 @@ void Telefone::setNumero(string numero)
   */
 string Telefone::getDdi()
 {
-
+    return this.ddi;
 }
 
 /** @brief (one liner)
@@ -402,7 +402,7 @@ string Telefone::getDdi()
   */
 string Telefone::getDdd()
 {
-
+    return this.ddd;
 }
 
 /** @brief (one liner)
@@ -411,7 +411,7 @@ string Telefone::getDdd()
   */
 string Telefone::getNumero()
 {
-
+    return this.numero;
 }
 
 //Classe SENHA
@@ -422,7 +422,7 @@ string Telefone::getNumero()
   */
 void Senha::setSenha(string senha)
 {
-
+    this.senha = senha;
 }
 
 /** @brief (one liner)
@@ -431,7 +431,7 @@ void Senha::setSenha(string senha)
   */
 string Senha::getSenha()
 {
-
+    return this.senha;
 }
 
 //Classe VAGAS
@@ -442,7 +442,7 @@ string Senha::getSenha()
   */
 void Vagas::setVagas(int vagas)
 {
-
+    this.vagas = vagas;
 }
 
 /** @brief (one liner)
@@ -451,5 +451,5 @@ void Vagas::setVagas(int vagas)
   */
 int Vagas::getVagas()
 {
-
+    return this.vagas;
 }
