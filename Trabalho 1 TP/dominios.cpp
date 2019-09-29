@@ -12,7 +12,7 @@ using namespace std;
   */
 void Assento::setTipo(char tipo)
 {
-
+    this.tipo = tipo;
 }
 
 /** @brief (one liner)
@@ -21,7 +21,7 @@ void Assento::setTipo(char tipo)
   */
 char Assento::getTipo()
 {
-
+    return this.tipo;
 }
 
 //Classe BAGAGEM
