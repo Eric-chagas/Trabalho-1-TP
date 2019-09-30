@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1569794389 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.cpp
+	<iostream>
+	"dominios.h"
+
+1569463567 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/main.cpp
+	<iostream>
+
+1569794203 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.cpp
+	<iostream>
+	"dominios.h"
+
+1569794203 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
+
