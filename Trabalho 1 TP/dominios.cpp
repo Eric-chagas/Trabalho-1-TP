@@ -10,6 +10,15 @@ using namespace std;
   *
   * (documentation goes here)
   */
+ Assento::Assento(char tipo)
+{
+    this->tipo = tipo;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
 void Assento::setTipo(char tipo)
 {
     this->tipo = tipo;
@@ -25,6 +34,15 @@ char Assento::getTipo()
 }
 
 //Classe BAGAGEM
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Bagagem::Bagagem(int numero)
+{
+    this->numero = numero;
+}
 
 /** @brief (one liner)
   *
@@ -50,6 +68,15 @@ int Bagagem::getNumero()
   *
   * (documentation goes here)
   */
+ Codigo_banco::Codigo_banco(string codigo)
+{
+    this->codigo = codigo;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
 void Codigo_banco::setCodigo(string codigo)
 {
     this->codigo = codigo;
@@ -65,6 +92,16 @@ string Codigo_banco::getCodigo()
 }
 
 //Classe Codigo_carona
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Codigo_carona::Codigo_carona(string codigo)
+{
+    this->codigo = codigo;
+}
+
 
 /** @brief (one liner)
   *
@@ -90,6 +127,15 @@ string Codigo_carona::getCodigo()
   *
   * (documentation goes here)
   */
+ Codigo_reserva::Codigo_reserva(string codigo)
+{
+    this->codigo = codigo;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
 void Codigo_reserva::setCodigo(string codigo)
 {
     this->codigo = codigo;
@@ -105,6 +151,15 @@ string Codigo_reserva::getCodigo()
 }
 
 // Classe CIDADE
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Cidade::Cidade(string cidade)
+{
+    this->cidade = cidade;
+}
 
 /** @brief (one liner)
   *
@@ -130,6 +185,15 @@ string Cidade::getCidade()
   *
   * (documentation goes here)
   */
+ Cpf::Cpf(string cpf)
+{
+    this->cpf = cpf;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
 void Cpf::setCpf(string cpf)
 {
     this->cpf = cpf;
@@ -145,6 +209,15 @@ string Cpf::getCpf()
 }
 
 //Classe DATA
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Data::Data(string data)
+{
+   this->data = data;
+}
 
 /** @brief (one liner)
   *
@@ -170,6 +243,15 @@ string Data::getData()
   *
   * (documentation goes here)
   */
+ Duracao::Duracao(int duracao)
+{
+    this->duracao = duracao;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
 void Duracao::setDuracao(int duracao)
 {
     this->duracao = duracao;
@@ -185,6 +267,15 @@ int Duracao::getDuracao()
 }
 
 //Classe ESTADO
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Estado::Estado(string estado)
+{
+    this->estado = estado;
+}
 
 /** @brief (one liner)
   *
@@ -210,6 +301,17 @@ string Estado::getEstado()
   *
   * (documentation goes here)
   */
+ Email::Email(string local, string dominio)
+{
+    this->local = local;
+    this->dominio = dominio;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+
 void Email::setLocal(string local)
 {
     this->local = local;
@@ -248,6 +350,15 @@ string Email::getDominio()
   *
   * (documentation goes here)
   */
+ Nome::Nome(string nome)
+{
+    this->nome = nome;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
 void Nome::setNome(string nome)
 {
     this->nome = nome;
@@ -263,6 +374,15 @@ string Nome::getNome()
 }
 
 //Classe Numero_agencia
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Numero_agencia::Numero_agencia(string numero, int digito)
+{
+    this->numero = numero;
+    this->digito = digito;
+}
 
 /** @brief (one liner)
   *
@@ -279,7 +399,7 @@ void Numero_agencia::setNumero(string numero)
   */
 void Numero_agencia::setDigito(int digito)
 {
-    this->digito_verificador = digito;
+    this->digito = digito;
 }
 
 /** @brief (one liner)
@@ -297,10 +417,20 @@ string Numero_agencia::getNumero()
   */
 int Numero_agencia::getDigito()
 {
-    return this->digito_verificador;
+    return this->digito;
 }
 
 //Classe Numero_conta
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Numero_conta::Numero_conta(string numero, int digito)
+{
+    this->numero = numero;
+    this->digito = digito;
+}
 
 /** @brief (one liner)
   *
@@ -339,6 +469,14 @@ int Numero_conta::getDigito()
 }
 
 //Classe PRECO
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Preco::Preco(double preco)
+{
+    this->preco = preco;
+}
 
 /** @brief (one liner)
   *
@@ -359,6 +497,16 @@ double Preco::getPreco()
 }
 
 //Classe TELEFONE
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Telefone::Telefone(string ddi, string ddd, string numero)
+{
+    this->ddi = ddi;
+    this->ddd = ddd;
+    this->numero = numero;
+}
 
 /** @brief (one liner)
   *
@@ -415,6 +563,14 @@ string Telefone::getNumero()
 }
 
 //Classe SENHA
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Senha::Senha(string senha)
+{
+    this->senha = senha;
+}
 
 /** @brief (one liner)
   *
@@ -435,6 +591,14 @@ string Senha::getSenha()
 }
 
 //Classe VAGAS
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+ Vagas::Vagas(int vagas)
+{
+    this->vagas = vagas;
+}
 
 /** @brief (one liner)
   *

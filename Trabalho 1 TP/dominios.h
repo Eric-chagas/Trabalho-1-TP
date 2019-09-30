@@ -13,6 +13,9 @@ public:
 
     //Get
     char getTipo();
+
+    //Construtor
+    Assento(char tipo);
 };
 
 class Bagagem {
@@ -25,6 +28,9 @@ public:
 
     //Get
     int getNumero();
+
+    //Construtor
+    Bagagem(int numero);
 };
 
 class Codigo_banco {
@@ -37,6 +43,9 @@ public:
 
     //Get
     string getCodigo();
+
+    //Construtor
+    Codigo_banco(string codigo);
 };
 
 class Codigo_carona {
@@ -49,6 +58,9 @@ public:
 
     //Get
     string getCodigo();
+
+    //Construtor
+    Codigo_carona(string codigo);
 };
 
 class Codigo_reserva {
@@ -61,6 +73,9 @@ public:
 
     //Get
     string getCodigo();
+
+    //Construtor
+    Codigo_reserva(string codigo);
 };
 
 class Cidade {
@@ -73,6 +88,9 @@ public:
 
     //Get
     string getCidade();
+
+    //Construtor
+    Cidade(string cidade);
 };
 
 class Cpf {
@@ -85,6 +103,9 @@ public:
 
     //Get
     string getCpf();
+
+    //Construtor
+    Cpf(string cpf);
 };
 
 class Data {
@@ -97,6 +118,9 @@ public:
 
     //Get
     string getData();
+
+    //Construtor
+    Data(string data);
 };
 
 class Duracao {
@@ -109,6 +133,9 @@ public:
 
     //Get
     int getDuracao();
+
+    //Construtor
+    Duracao(int duracao);
 };
 
 class Estado {
@@ -121,6 +148,9 @@ public:
 
     //Get
     string getEstado();
+
+    //Construtor
+    Estado(string estado);
 };
 
 class Email {
@@ -136,6 +166,9 @@ public:
     //Get
     string getLocal();
     string getDominio();
+
+    //Construtor
+    Email(string local, string dominio);
 };
 
 class Nome {
@@ -148,6 +181,9 @@ public:
 
     //Get
     string getNome();
+
+    //Construtor
+    Nome(string nome);
 };
 
 class Numero_agencia {
@@ -155,7 +191,7 @@ class Numero_agencia {
 X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
 private:
     string numero;
-    int digito_verificador;
+    int digito;
 public:
     //Set
     void setNumero(string numero);
@@ -164,6 +200,9 @@ public:
     //Get
     string getNumero();
     int getDigito();
+
+    //Construtor
+    Numero_agencia(string numero, int digito);
 };
 
 class Numero_conta {
@@ -180,6 +219,9 @@ public:
     //Get
     string getNumero();
     int getDigito();
+
+    //Construtor
+    Numero_conta(string numero, int digito);
 };
 
 class Preco {
@@ -193,6 +235,9 @@ public:
 
     //Get
     double getPreco();
+
+    //Construtor
+    Preco(double preco);
 };
 
 class Telefone {
@@ -212,6 +257,9 @@ public:
     string getDdi();
     string getDdd();
     string getNumero();
+
+    //Construtor
+    Telefone(string ddi, string ddd, string numero);
 };
 
 class Senha {
@@ -225,6 +273,9 @@ public:
 
     //Get
     string getSenha();
+
+    //Construtor
+    Senha(string senha);
 };
 
 class Vagas {
@@ -238,6 +289,9 @@ public:
 
     //Get
     int getVagas();
+
+    //Construtor
+    Vagas(int vagas);
 };
 
 
