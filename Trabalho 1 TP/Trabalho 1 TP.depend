@@ -9,12 +9,22 @@
 	"dominios.h"
 	"entidades.h"
 
-1569868894 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.cpp
+1569915780 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.cpp
 	<iostream>
 	"dominios.h"
 
-1569901217 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
+1569915743 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
 
 1569888528 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.h
 	"dominios.h"
+
+1569913993 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUdominios.cpp
+	<iostream>
+	"dominios.h"
+	"entidades.h"
+	"TUdominios.h"
+
+1569909740 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUdominios.h
+	"dominios.h"
+	"entidades.h"
 

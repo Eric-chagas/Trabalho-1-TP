@@ -378,10 +378,10 @@ string Nome::getNome()
   *
   * (documentation goes here)
   */
- Numero_agencia::Numero_agencia(string numero, int digito)
+ Numero_agencia::Numero_agencia(string numero)
 {
     this->numero = numero;
-    this->digito = digito;
+//    this->digito = calculaDigito(numero);
 }
 
 /** @brief (one liner)
@@ -397,11 +397,12 @@ void Numero_agencia::setNumero(string numero)
   *
   * (documentation goes here)
   */
-void Numero_agencia::setDigito(int digito)
+/*******************************************************************************************
+int Numero_agencia::calculaDigito(string numero)
 {
-    this->digito = digito;
-}
 
+}
+********************************************************************************************/
 /** @brief (one liner)
   *
   * (documentation goes here)
@@ -426,10 +427,10 @@ int Numero_agencia::getDigito()
   *
   * (documentation goes here)
   */
- Numero_conta::Numero_conta(string numero, int digito)
+ Numero_conta::Numero_conta(string numero)
 {
     this->numero = numero;
-    this->digito = digito;
+//    this->digito = calculaDigito(numero);
 }
 
 /** @brief (one liner)
@@ -445,10 +446,18 @@ void Numero_conta::setNumero(string numero)
   *
   * (documentation goes here)
   */
-void Numero_conta::setDigito(int digito)
+/***************************************************************************************
+int Numero_conta::calculaDigito(string numero)
 {
-    this->digito = digito;
+    //Algoritmo de Luhn
+    int l = numero.length(), soma = 0;
+
+    for (int i = 0; i<l ; i++){
+        numero[i]-49
+    }
 }
+
+******************************************************************************************/
 
 /** @brief (one liner)
   *
