@@ -16,6 +16,7 @@ public:
 
     //Construtor
     Assento(char tipo);
+    Assento() = default;
 };
 
 class Bagagem {
@@ -31,6 +32,7 @@ public:
 
     //Construtor
     Bagagem(int numero);
+    Bagagem() = default;
 };
 
 class Codigo_banco {
@@ -46,6 +48,7 @@ public:
 
     //Construtor
     Codigo_banco(string codigo);
+    Codigo_banco() = default;
 };
 
 class Codigo_carona {
@@ -61,6 +64,7 @@ public:
 
     //Construtor
     Codigo_carona(string codigo);
+    Codigo_carona() = default;
 };
 
 class Codigo_reserva {
@@ -76,6 +80,7 @@ public:
 
     //Construtor
     Codigo_reserva(string codigo);
+    Codigo_reserva() = default;
 };
 
 class Cidade {
@@ -91,6 +96,7 @@ public:
 
     //Construtor
     Cidade(string cidade);
+    Cidade() = default;
 };
 
 class Cpf {
@@ -106,6 +112,7 @@ public:
 
     //Construtor
     Cpf(string cpf);
+    Cpf() = default;
 };
 
 class Data {
@@ -121,6 +128,7 @@ public:
 
     //Construtor
     Data(string data);
+    Data() = default;
 };
 
 class Duracao {
@@ -136,6 +144,7 @@ public:
 
     //Construtor
     Duracao(int duracao);
+    Duracao() = default;
 };
 
 class Estado {
@@ -151,6 +160,7 @@ public:
 
     //Construtor
     Estado(string estado);
+    Estado() = default;
 };
 
 class Email {
@@ -169,6 +179,7 @@ public:
 
     //Construtor
     Email(string local, string dominio);
+    Email() = default;
 };
 
 class Nome {
@@ -182,8 +193,9 @@ public:
     //Get
     string getNome();
 
-    //Construtor
+    //Construtores
     Nome(string nome);
+    Nome() = default;
 };
 
 class Numero_agencia {
@@ -203,6 +215,7 @@ public:
 
     //Construtor
     Numero_agencia(string numero, int digito);
+    Numero_agencia() = default;
 };
 
 class Numero_conta {
@@ -222,6 +235,7 @@ public:
 
     //Construtor
     Numero_conta(string numero, int digito);
+    Numero_conta() = default;
 };
 
 class Preco {
@@ -238,6 +252,7 @@ public:
 
     //Construtor
     Preco(double preco);
+    Preco() = default;
 };
 
 class Telefone {
@@ -260,6 +275,7 @@ public:
 
     //Construtor
     Telefone(string ddi, string ddd, string numero);
+    Telefone() = default;
 };
 
 class Senha {
@@ -276,6 +292,7 @@ public:
 
     //Construtor
     Senha(string senha);
+    Senha() = default;
 };
 
 class Vagas {
@@ -292,6 +309,7 @@ public:
 
     //Construtor
     Vagas(int vagas);
+    Vagas() = default;
 };
 
 

@@ -1,6 +1,8 @@
 #ifndef ENTIDADES_H
 #define ENTIDADES_H
 
+#include "dominios.h"
+
 using namespace std;
 
 class Usuario {
@@ -13,7 +15,22 @@ private:
     Cpf cpf;
 
 public:
+    //Set
+    void setNome(string nome);
+    void setTelefone(string ddi, string ddd, string numero);
+    void setEmail(string local, string dominio);
+    void setSenha(string senha);
+    void setCpf(string cpf);
 
+    //Get
+    Nome getNome();
+    Telefone getTelefone();
+    Email getEmail();
+    Senha getSenha();
+    Cpf getCpf();
+
+    //Construtor
+    Usuario() = default;
 };
 
 class Reserva {
@@ -24,6 +41,18 @@ private:
     Bagagem bagagem;
 
 public:
+    //Set
+    void setCodigo(string codigo);
+    void setAssento(char tipo);
+    void setBagagem(int numero);
+
+    //Get
+    Codigo_reserva getCodigo();
+    Assento getAssento();
+    Bagagem getBagagem();
+
+    //Construtor
+    Reserva() = default;
 };
 
 class Carona {
@@ -40,6 +69,30 @@ private:
     Preco preco;
 
 public:
+    //Set
+    void setCodigo(string codigo);
+    void setCidade_origem(string cidade);
+    void setEstado_origem(string estado);
+    void setCidade_destino(string cidade);
+    void setEstado_destino(string estado);
+    void setData(string data);
+    void setDuracao(int duracao);
+    void setVagas(int vagas);
+    void setPreco(double preco);
+
+    //Get
+    Codigo_carona getCodigo();
+    Cidade getCidade_origem();
+    Estado getEstado_origem();
+    Cidade getCidade_destino();
+    Estado getEstado_destino();
+    Data getData();
+    Duracao getDuracao();
+    Vagas getVagas();
+    Preco getPreco();
+
+    //Construtor
+    Carona() = default;
 };
 
 class Conta {
@@ -50,6 +103,19 @@ private:
     Numero_conta numero;
 
 public:
+    //Set
+    void setBanco(string codigo);
+    void setAgencia(string numero, int digito);
+    void setNumero(string numero, int digito);
+
+    //Get
+    Codigo_banco getBanco();
+    Numero_agencia getAgencia();
+    Numero_conta getNumero();
+
+    //Construtor
+    Conta() = default;
+
 };
 
 
