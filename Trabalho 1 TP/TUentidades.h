@@ -9,38 +9,22 @@ using namespace std;
 
 class TUUsuario {
 public:
-    void validarNome();
-    void validarTelefone();
-    void validarEmail();
-    void validarSenha();
-    void validarCpf();
+    void validarUsuario();
 };
 
 class TUReserva {
 public:
-    void validarCodigo();
-    void validarAssento();
-    void validarBagagem();
+    void validarReserva();
 };
 
 class TUCarona {
 public:
-    void validarCodigo();
-    void validarCidade_origem();
-    void validarEstado_origem();
-    void validarCidade_destino();
-    void validarEstado_destino();
-    void validarData();
-    void validarDuracao();
-    void validarVagas();
-    void validarPreco();
+    void validarCarona();
 };
 
 class TUConta {
 public:
-    void validarBanco();
-    void validarAgencia();
-    void validarNumero();
+    void validarConta();
 };
 
 #endif // TUENTIDADES_H_INCLUDED

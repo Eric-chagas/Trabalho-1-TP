@@ -34,6 +34,7 @@
 		</Compiler>
 		<Unit filename="TUdominios.cpp" />
 		<Unit filename="TUdominios.h" />
+		<Unit filename="TUentidades.cpp" />
 		<Unit filename="TUentidades.h" />
 		<Unit filename="dominios.cpp" />
 		<Unit filename="dominios.h" />
