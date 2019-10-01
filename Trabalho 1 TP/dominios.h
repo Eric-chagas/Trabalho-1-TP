@@ -207,14 +207,14 @@ private:
 public:
     //Set
     void setNumero(string numero);
-    //int calculaDigito(string numero);
+    void setDigito(int digito);
 
     //Get
     string getNumero();
     int getDigito();
 
     //Construtor
-    Numero_agencia(string numero);
+    Numero_agencia(string numero, int digito);
     Numero_agencia() = default;
 };
 
@@ -227,14 +227,14 @@ private:
 public:
     //Set
     void setNumero(string numero);
-    //int calculaDigito(string numero);
+    void setDigito(int digito);
 
     //Get
     string getNumero();
     int getDigito();
 
     //Construtor
-    Numero_conta(string numero);
+    Numero_conta(string numero, int digito);
     Numero_conta() = default;
 };
 

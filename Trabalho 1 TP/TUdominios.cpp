@@ -131,7 +131,7 @@ void TUData::validarData()
 
 void TUDuracao::validarDuracao()
 {
-        //Variavel local i de teste
+    //Variavel local i de teste
     int i;
     cout << "Insira a duração da carona: ";
     cin >> i;
@@ -382,6 +382,82 @@ void TUVagas::validarVagas()
             throw invalid_argument("Tipo não suportado. Digite apenas o numero de vagas da carona.\n");
         }
 
+        //Cenario de sucesso
+        cout << "Sucesso!\n";
+
+    } catch (string x) {
+        //Cenario de falha
+        cout << x << endl;
+    }
+}
+
+void TUCodigo_banco::validarCodigo()
+{
+    //Variavel local s de teste
+    string s;
+    cout << "Insira o codigo do banco (XXX): ";
+    cin >> s;
+
+    //Instanciamento
+    Codigo_banco c1;
+
+    try {
+        c1.setCodigo(s);
+
+        if (c1.getCodigo() != s){
+            throw invalid_argument("Tipo não suportado.\n");
+        }
+        //Cenario de sucesso
+        cout << "Sucesso!\n";
+
+    } catch (string x) {
+        //Cenario de falha
+        cout << x << endl;
+    }
+
+}
+
+void TUCodigo_carona::validarCodigo()
+{
+    //Variavel local s de teste
+    string s;
+    cout << "Insira o codigo da carona (XXXX): ";
+    cin >> s;
+
+    //Instanciamento
+    Codigo_carona c1;
+
+    try {
+        c1.setCodigo(s);
+
+        if (c1.getCodigo() != s){
+            throw invalid_argument("Tipo não suportado.\n");
+        }
+        //Cenario de sucesso
+        cout << "Sucesso!\n";
+
+    } catch (string x) {
+        //Cenario de falha
+        cout << x << endl;
+    }
+}
+
+void TUCodigo_reserva::validarCodigo()
+{
+    //Variavel local s de teste
+    string s;
+    cout << "Insira o codigo da reserva (XXXX): ";
+    cin >> s;
+
+    //Instanciamento
+    Codigo_reserva c1;
+
+    try {
+        c1.setCodigo(s);
+
+        if (c1.getCodigo() != s){
+            throw invalid_argument("Tipo não suportado.\n");
+        }
         //Cenario de sucesso
         cout << "Sucesso!\n";
 

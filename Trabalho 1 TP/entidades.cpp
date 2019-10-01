@@ -235,13 +235,13 @@ void Conta::setBanco(string codigo)
 void Conta::setAgencia(string numero, int digito)
 {
     this->agencia.setNumero(numero);
-    //this->agencia.setDigito(digito);
+    this->agencia.setDigito(digito);
 }
 
 void Conta::setNumero(string numero, int digito)
 {
     this->numero.setNumero(numero);
-//    this->numero.setDigito(digito);
+    this->numero.setDigito(digito);
 }
 
 Codigo_banco Conta::getBanco()
