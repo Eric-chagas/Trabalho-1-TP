@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1569885619 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.cpp
+1569888697 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.cpp
 	<iostream>
 	"dominios.h"
 	"entidades.h"
 
-1569886180 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/main.cpp
+1569905387 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/main.cpp
 	<iostream>
 	"dominios.h"
 	"entidades.h"
@@ -13,7 +13,7 @@
 	<iostream>
 	"dominios.h"
 
-1569885880 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
+1569901217 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
 
 1569888528 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.h
 	"dominios.h"
