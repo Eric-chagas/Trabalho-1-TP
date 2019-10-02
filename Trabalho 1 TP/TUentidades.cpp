@@ -16,7 +16,7 @@ void TUUsuario::validarUsuario()
     //Variavel local n de teste
     string n;
     cout << "Insira o seu nome: ";
-    getline(cin, n);
+    cin >> n;
 
     //Teste
 
@@ -228,7 +228,7 @@ void TUCarona::validarCarona()
     //Variavel local c de teste
     string c;
     cout << "Insira o nome da sua cidade de origem: ";
-    getline(cin, c);
+    cin >> c;
 
     try{
         c_teste.setCidade_origem(c);
@@ -274,7 +274,7 @@ void TUCarona::validarCarona()
     //Variavel local cd de teste
     string cd;
     cout << "Insira o nome da sua cidade de destino: ";
-    getline(cin, cd);
+    cin >> cd;
 
     try{
         c_teste.setCidade_destino(cd);
@@ -445,7 +445,7 @@ void TUConta::validarConta()
     cin >> numero >> digito;
 
     try{
-        co_teste.setNumero(numero, digito);
+        co_teste.setAgencia(numero, digito);
         Numero_agencia teste_agencia = co_teste.getAgencia();
 
         if(teste_agencia.getNumero() != numero || teste_agencia.getDigito() != digito){

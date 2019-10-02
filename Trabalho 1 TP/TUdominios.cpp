@@ -59,7 +59,7 @@ void TUCidade::validarCidade()
     //Variavel local s de teste
     string s;
     cout << "Insira o nome da sua cidade: ";
-    getline(cin, s);
+    cin >> s;
 
     //Instanciamento
     Cidade c1;
@@ -212,7 +212,7 @@ void TUNome::validarNome()
     //Variavel local s de teste
     string s;
     cout << "Insira o seu nome: ";
-    getline(cin, s);
+    cin >> s;
 
     //Instanciamento
     Nome n1;
