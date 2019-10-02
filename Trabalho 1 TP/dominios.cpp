@@ -6,16 +6,18 @@ using namespace std;
 
 //Classe ASSENTO
 
-/** @brief (one liner)
-  *
-  * (documentation goes here)
+/** @brief Implementação dos métodos das classes domínio
+  * @author Eric Chagas de Oliveira
+  * @since 01-10-2019
+  * A Implementação dos métodos é realizada nesse arquivo, e a declaração no arquivo header correspondente
+  * de forma a facilitar a organização do sistema atravéz de módulos.
   */
  Assento::Assento(char tipo)
 {
     this->tipo = tipo;
 }
 
-/** @brief (one liner)
+/**
   *
   * (documentation goes here)
   */

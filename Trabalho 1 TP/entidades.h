@@ -5,6 +5,17 @@
 
 using namespace std;
 
+/** @brief Declaração das classes entidade e seus métodos
+  * @author Eric Chagas de Oliveira
+  * @since 01-10-2019
+  *
+  * O arquivo header contem a declaração de todas as classes e métodos, e para que sejam utilizados em um sistema
+  * basta a inclusão desse arquivo.
+  * As classes possuem atributos que são objetos de algum tipo presente nas classes Domínio.
+  * Estão presentes métodos getters e setters, que servem para retornar um valor armazenado no objeto ao usuário, e
+  * armazenar um valor no objeto respectivamente.
+  */
+
 class Usuario {
 
 private:

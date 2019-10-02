@@ -5,6 +5,13 @@
 
 using namespace std;
 
+/** @brief Implementação dos métodos das classes entidade
+  * @author Eric Chagas de Oliveira
+  * @since 01-10-2019
+  * A Implementação dos métodos é realizada nesse arquivo, e a declaração no arquivo header correspondente
+  * de forma a facilitar a organização do sistema atravéz de módulos.
+  */
+
 //Classe USUARIO
 
 /** @brief (one liner)

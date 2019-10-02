@@ -5,6 +5,14 @@
 
 using namespace std;
 
+/** @brief Implementação dos métodos de Teste de unidade das classes domínio
+  * @author Eric Chagas de Oliveira
+  * @since 01-10-2019
+  * A Implementação dos métodos é realizada nesse arquivo, e a declaração no arquivo header correspondente
+  * de forma a facilitar a organização do sistema atravéz de módulos. Cada classe na biblioteca de dominios
+  * possui uma correspondente de teste nesse arquivo. Os métodos de teste de unidade facilitam a manutenção do sistema
+  * e a prevenção de bugs.
+  */
 
 void TUAssento::validarTipo()
 {
