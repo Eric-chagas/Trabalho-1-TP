@@ -12,23 +12,30 @@ using namespace std;
   * A Implementação dos métodos é realizada nesse arquivo, e a declaração no arquivo header correspondente
   * de forma a facilitar a organização do sistema atravéz de módulos.
   */
- Assento::Assento(char tipo)
+
+/** @brief Método construtor
+  *
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
+  */
+
+Assento::Assento(char tipo)
 {
     this->tipo = tipo;
 }
 
-/**
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Assento::setTipo(char tipo)
 {
     this->tipo = tipo;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 char Assento::getTipo()
 {
@@ -37,27 +44,28 @@ char Assento::getTipo()
 
 //Classe BAGAGEM
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Bagagem::Bagagem(int numero)
 {
     this->numero = numero;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Bagagem::setNumero(int numero)
 {
     this->numero = numero;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 int Bagagem::getNumero()
 {
@@ -66,27 +74,28 @@ int Bagagem::getNumero()
 
 //Classe Codigo_banco
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Codigo_banco::Codigo_banco(string codigo)
 {
     this->codigo = codigo;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Codigo_banco::setCodigo(string codigo)
 {
     this->codigo = codigo;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Codigo_banco::getCodigo()
 {
@@ -95,9 +104,9 @@ string Codigo_banco::getCodigo()
 
 //Classe Codigo_carona
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Codigo_carona::Codigo_carona(string codigo)
 {
@@ -105,18 +114,19 @@ string Codigo_banco::getCodigo()
 }
 
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Codigo_carona::setCodigo(string codigo)
 {
     this->codigo = codigo;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Codigo_carona::getCodigo()
 {
@@ -125,27 +135,28 @@ string Codigo_carona::getCodigo()
 
 //Classe Codigo_reserva
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Codigo_reserva::Codigo_reserva(string codigo)
 {
     this->codigo = codigo;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Codigo_reserva::setCodigo(string codigo)
 {
     this->codigo = codigo;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Codigo_reserva::getCodigo()
 {
@@ -154,27 +165,28 @@ string Codigo_reserva::getCodigo()
 
 // Classe CIDADE
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Cidade::Cidade(string cidade)
 {
     this->cidade = cidade;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Cidade::setCidade(string cidade)
 {
     this->cidade = cidade;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Cidade::getCidade()
 {
@@ -183,27 +195,28 @@ string Cidade::getCidade()
 
 // Classe CPF
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Cpf::Cpf(string cpf)
 {
     this->cpf = cpf;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Cpf::setCpf(string cpf)
 {
     this->cpf = cpf;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Cpf::getCpf()
 {
@@ -212,27 +225,28 @@ string Cpf::getCpf()
 
 //Classe DATA
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Data::Data(string data)
 {
    this->data = data;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Data::setData(string data)
 {
     this->data = data;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Data::getData()
 {
@@ -241,27 +255,28 @@ string Data::getData()
 
 //Classe DURACAO
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Duracao::Duracao(int duracao)
 {
     this->duracao = duracao;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Duracao::setDuracao(int duracao)
 {
     this->duracao = duracao;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 int Duracao::getDuracao()
 {
@@ -270,27 +285,28 @@ int Duracao::getDuracao()
 
 //Classe ESTADO
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Estado::Estado(string estado)
 {
     this->estado = estado;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Estado::setEstado(string estado)
 {
     this->estado = estado;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Estado::getEstado()
 {
@@ -299,9 +315,9 @@ string Estado::getEstado()
 
 //Classe EMAIL
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Email::Email(string local, string dominio)
 {
@@ -309,37 +325,38 @@ string Estado::getEstado()
     this->dominio = dominio;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
-
 void Email::setLocal(string local)
 {
     this->local = local;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Email::setDominio(string dominio)
 {
     this->dominio = dominio;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Email::getLocal()
 {
     return this->local;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Email::getDominio()
 {
@@ -348,27 +365,28 @@ string Email::getDominio()
 
 //Classe NOME
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Nome::Nome(string nome)
 {
     this->nome = nome;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Nome::setNome(string nome)
 {
     this->nome = nome;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Nome::getNome()
 {
@@ -376,9 +394,9 @@ string Nome::getNome()
 }
 
 //Classe Numero_agencia
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Numero_agencia::Numero_agencia(string numero, int digito)
 {
@@ -386,18 +404,18 @@ string Nome::getNome()
     this->digito = digito;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Numero_agencia::setNumero(string numero)
 {
     this->numero = numero;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Numero_agencia::setDigito(int digito)
 {
@@ -410,18 +428,20 @@ int Numero_agencia::calculaDigito(string numero)
 }
 */
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Numero_agencia::getNumero()
 {
     return this->numero;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 int Numero_agencia::getDigito()
 {
@@ -430,9 +450,9 @@ int Numero_agencia::getDigito()
 
 //Classe Numero_conta
 
-/** @brief (one liner)
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Numero_conta::Numero_conta(string numero, int digito)
 {
@@ -440,18 +460,18 @@ int Numero_agencia::getDigito()
     this->digito = digito;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Numero_conta::setNumero(string numero)
 {
     this->numero = numero;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Numero_conta::setDigito(int digito)
 {
@@ -469,18 +489,20 @@ int Numero_conta::calculaDigito(string numero)
 }
 */
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Numero_conta::getNumero()
 {
     return this->numero;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 int Numero_conta::getDigito()
 {
@@ -488,27 +510,29 @@ int Numero_conta::getDigito()
 }
 
 //Classe PRECO
-/** @brief (one liner)
+
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Preco::Preco(double preco)
 {
     this->preco = preco;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Preco::setPreco(double preco)
 {
     this->preco = preco;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 double Preco::getPreco()
 {
@@ -516,9 +540,10 @@ double Preco::getPreco()
 }
 
 //Classe TELEFONE
-/** @brief (one liner)
+
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Telefone::Telefone(string ddi, string ddd, string numero)
 {
@@ -527,54 +552,57 @@ double Preco::getPreco()
     this->numero = numero;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Telefone::setDdi(string ddi)
 {
     this->ddi = ddi;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Telefone::setDdd(string ddd)
 {
     this->ddd = ddd;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Telefone::setNumero(string numero)
 {
     this->numero = numero;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Telefone::getDdi()
 {
     return this->ddi;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Telefone::getDdd()
 {
     return this->ddd;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Telefone::getNumero()
 {
@@ -582,27 +610,29 @@ string Telefone::getNumero()
 }
 
 //Classe SENHA
-/** @brief (one liner)
+
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
- Senha::Senha(string senha)
+Senha::Senha(string senha)
 {
     this->senha = senha;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Senha::setSenha(string senha)
 {
     this->senha = senha;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 string Senha::getSenha()
 {
@@ -610,27 +640,29 @@ string Senha::getSenha()
 }
 
 //Classe VAGAS
-/** @brief (one liner)
+
+/** @brief Método construtor
   *
-  * (documentation goes here)
+  * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
  Vagas::Vagas(int vagas)
 {
     this->vagas = vagas;
 }
 
-/** @brief (one liner)
+/** @brief Método set
   *
-  * (documentation goes here)
+  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
 void Vagas::setVagas(int vagas)
 {
     this->vagas = vagas;
 }
 
-/** @brief (one liner)
+/** @brief Método get
   *
-  * (documentation goes here)
+  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
+  * mesmo tipo do atributo, e o retorna.
   */
 int Vagas::getVagas()
 {
