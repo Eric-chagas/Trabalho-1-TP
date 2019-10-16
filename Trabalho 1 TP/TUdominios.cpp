@@ -11,9 +11,15 @@ using namespace std;
   * A Implementação dos métodos é realizada nesse arquivo, e a declaração no arquivo header correspondente
   * de forma a facilitar a organização do sistema atravéz de módulos. Cada classe na biblioteca de dominios
   * possui uma correspondente de teste nesse arquivo. Os métodos de teste de unidade facilitam a manutenção do sistema
-  * e a prevenção de bugs.
+  * e a prevenção de bugs. Os testes consistem em verificar se os dados foram inseridos no formato correto, e se o
+  * armazenamento foi realizado corretamente.
   */
 
+
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUAssento::validarTipo()
 {
     //Variavel local c de teste
@@ -37,6 +43,10 @@ void TUAssento::validarTipo()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUBagagem::validarNumero()
 {
     //Variavel local i de teste
@@ -62,6 +72,10 @@ void TUBagagem::validarNumero()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUCidade::validarCidade()
 {
     //Variavel local s de teste
@@ -87,6 +101,10 @@ void TUCidade::validarCidade()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUCpf::validarCpf()
 {
     //Variavel local s de teste
@@ -112,6 +130,10 @@ void TUCpf::validarCpf()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUData::validarData()
 {
     //Variavel local s de teste
@@ -137,6 +159,10 @@ void TUData::validarData()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUDuracao::validarDuracao()
 {
     //Variavel local i de teste
@@ -162,6 +188,10 @@ void TUDuracao::validarDuracao()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUEstado::validarEstado()
 {
     //Variaveil local s de teste
@@ -189,6 +219,10 @@ void TUEstado::validarEstado()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUEmail::validarEmail()
 {
     //Variaveis locais, local e dominio de teste
@@ -215,6 +249,10 @@ void TUEmail::validarEmail()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUNome::validarNome()
 {
     //Variavel local s de teste
@@ -241,6 +279,10 @@ void TUNome::validarNome()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUNumero_agencia::validarNumero_agencia()
 {
     //Variavel local numero de teste
@@ -266,6 +308,10 @@ void TUNumero_agencia::validarNumero_agencia()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUNumero_conta::validarNumero_conta()
 {
     //Variavel local numero de teste
@@ -292,6 +338,10 @@ void TUNumero_conta::validarNumero_conta()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUPreco::validarPreco()
 {
     //Variavel local d de teste
@@ -318,6 +368,10 @@ void TUPreco::validarPreco()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUTelefone::validarTelefone()
 {
     //Variaveis locais ddi, ddd e numero de teste
@@ -346,6 +400,10 @@ void TUTelefone::validarTelefone()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUSenha::validarSenha()
 {
     //Variavel local s de teste
@@ -373,6 +431,10 @@ void TUSenha::validarSenha()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUVagas::validarVagas()
 {
     //Variavel local i de teste
@@ -399,6 +461,10 @@ void TUVagas::validarVagas()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUCodigo_banco::validarCodigo()
 {
     //Variavel local s de teste
@@ -425,6 +491,10 @@ void TUCodigo_banco::validarCodigo()
 
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUCodigo_carona::validarCodigo()
 {
     //Variavel local s de teste
@@ -450,6 +520,10 @@ void TUCodigo_carona::validarCodigo()
     }
 }
 
+/**  @brief Método de validação
+  *
+  *  Método utilizado para validação dos dados recebidos, o teste verifica o formato e armazenamento dos dados.
+  */
 void TUCodigo_reserva::validarCodigo()
 {
     //Variavel local s de teste

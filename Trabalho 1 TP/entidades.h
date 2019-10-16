@@ -16,6 +16,12 @@ using namespace std;
   * armazenar um valor no objeto respectivamente.
   */
 
+  /** @brief Classe Usuario
+  *
+  * Classe que detém as informações pessoais do usuário do sistema, identificados como objetos do tipo nome, telefone,
+  * email, senha e cpf.
+  *
+  */
 class Usuario {
 
 private:
@@ -44,6 +50,12 @@ public:
     Usuario() = default;
 };
 
+/** @brief Classe Reserva
+  *
+  * Classe que detém as informações da reserva da carona, identificados por objetos dos tipos Codigo_reserva, Assento e
+  * Bagagem.
+  *
+  */
 class Reserva {
 
 private:
@@ -66,6 +78,12 @@ public:
     Reserva() = default;
 };
 
+/** @brief Classe Carona
+  *
+  * Classe que detém as informações da carona, identificados por objetos dos tipos Codigo_carona, Cidade, Estado, Data,
+  * Duracao, Vagas e Preco.
+  *
+  */
 class Carona {
 
 private:
@@ -106,6 +124,12 @@ public:
     Carona() = default;
 };
 
+/** @brief Classe Conta
+  *
+  * Classe que detém as informações da conta bancária de pagamento da carona, identificadas por objetos dos tipos
+  * Codigo_banco, Numero_agencia e Numero_conta.
+  *
+  */
 class Conta {
 
 private:

@@ -12,7 +12,8 @@ using namespace std;
   * A Implementação dos métodos é realizada nesse arquivo, e a declaração no arquivo header correspondente
   * de forma a facilitar a organização do sistema atravéz de módulos. Cada classe na biblioteca de entidades
   * possui uma correspondente de teste nesse arquivo. Os métodos de teste de unidade facilitam a manutenção do sistema
-  * e a prevenção de bugs.
+  * e a prevenção de bugs. Os testes consistem em verificar se os dados foram inseridos no formato correto e se o
+  * armazenamento foi realizado corretamente.
   */
 
 void TUUsuario::validarUsuario()

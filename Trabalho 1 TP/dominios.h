@@ -17,6 +17,11 @@ using namespace std;
   * como argumentos.
   */
 
+/** @brief Classe Assento
+  *
+  * Classe que detém o tipo do assento na carona, dianteiro ou traseiro identificados por um char (D/T).
+  *
+  */
 class Assento {
 //D = DIANTEIRO ; T = TRASEIRO
 private:
@@ -33,6 +38,11 @@ public:
     Assento() = default;
 };
 
+/** @brief Classe Bagagem
+  *
+  * Classe que detém o número de bagagens na carona, identificado por um int (0, 1, 2, 3 ou 4).
+  *
+  */
 class Bagagem {
 //Espaco para 0, 1, 2, 3 ou 4 bagagens
 private:
@@ -49,6 +59,11 @@ public:
     Bagagem() = default;
 };
 
+/** @brief Classe Codigo_banco
+  *
+  * Sub-classe de Codigo, que detem um código de identificação do banco na carona, identificado por uma string (XXX).
+  *
+  */
 class Codigo_banco {
 //Codigo de Banco (XXX)
 private:
@@ -65,6 +80,11 @@ public:
     Codigo_banco() = default;
 };
 
+/** @brief Classe Codigo_carona
+  *
+  * Sub-classe de Codigo, que detém um código de identificação da carona, identificado por uma sring (XXXX).
+  *
+  */
 class Codigo_carona {
 //Codigo de Carona (XXXX)
 private:
@@ -81,6 +101,11 @@ public:
     Codigo_carona() = default;
 };
 
+/** @brief Classe Codigo_reserva
+  *
+  * Sub-classe de Codigo, que detém um código de identificação da reserva, identificado por uma sring (XXXXX).
+  *
+  */
 class Codigo_reserva {
 //Codigo de Reserva (XXXXX)
 private:
@@ -97,6 +122,11 @@ public:
     Codigo_reserva() = default;
 };
 
+/** @brief Classe Cidade
+  *
+  * Classe que detém o nome de uma cidade, de destino ou partida da carona, identificada por uma string.
+  *
+  */
 class Cidade {
 //De 1 a 10 caracteres (pode ter " ")
 private:
@@ -113,6 +143,11 @@ public:
     Cidade() = default;
 };
 
+/** @brief Classe Cpf
+  *
+  * Classe que detém o CPF do usuário do sistema, identificado por uma string (XXX.XXX.XXX-XX).
+  *
+  */
 class Cpf {
 //formato (XXX.XXX.XXX-XX)
 private:
@@ -129,6 +164,11 @@ public:
     Cpf() = default;
 };
 
+/** @brief Classe Data
+  *
+  * Classe que detém a data agendada para a carona, identificada por uma string (DD/MM/AAAA).
+  *
+  */
 class Data {
 //formato (DD/MM/AAAA)
 private:
@@ -145,6 +185,11 @@ public:
     Data() = default;
 };
 
+/** @brief Classe Duracao
+  *
+  * Classe que detem a duração da carona, identificada por um int (entre 1 e 48).
+  *
+  */
 class Duracao {
 //Entre 1 e 48 horas
 private:
@@ -161,6 +206,11 @@ public:
     Duracao() = default;
 };
 
+/** @brief Classe Estado
+  *
+  * Classe que detém o nome de um estado, de destino ou de partida da carona e identificado por uma string (Sigla: XX).
+  *
+  */
 class Estado {
 //Qualquer estado do Brasil (Sigla)
 private:
@@ -177,6 +227,11 @@ public:
     Estado() = default;
 };
 
+/** @brief Classe Email
+  *
+  * Classe que detém os componentes do e-mail do usuário do sistema, identificados por duas strings.
+  *
+  */
 class Email {
 //local@dominio
 private:
@@ -196,6 +251,11 @@ public:
     Email() = default;
 };
 
+/** @brief Classe Nome
+  *
+  * Classe que detém um nome, identificado por uma string (o nome do usuário por exemplo).
+  *
+  */
 class Nome {
 //De 1 a 20 caracteres (pode ter " ")
 private:
@@ -212,6 +272,12 @@ public:
     Nome() = default;
 };
 
+/** @brief Classe Numero_agencia
+  *
+  * Sub-classe de Numero, que detém o número da agência e o dígito verificador, identificados por uma string
+  * e um int respectivamente (XXXX-Y, onde X são algarismos do número da agência e Y é o dígito verificador).
+  *
+  */
 class Numero_agencia {
 /*Numero de Agencia (XXXX-Y), onde
 X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
@@ -232,6 +298,12 @@ public:
     Numero_agencia() = default;
 };
 
+/** @brief Classe Numero_conta
+  *
+  * Sub-classe de Numero, que detém o número da conta e o dígito verificador, identificados por uma string
+  * e um int respectivamente (XXXXXX-Y, onde X são algarismos do número da conta e Y é o dígito verificador).
+  *
+  */
 class Numero_conta {
 /*Numero de Conta (XXXXXX-Y), onde
 X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
@@ -252,6 +324,11 @@ public:
     Numero_conta() = default;
 };
 
+/** @brief Classe Preco
+  *
+  * Classe que detém o preço da carona, identificado por um double.
+  *
+  */
 class Preco {
 //Preco da Carona
 private:
@@ -269,6 +346,12 @@ public:
     Preco() = default;
 };
 
+/** @brief Classe Telefone
+  *
+  * Classe que detém os componentes do telefone do usuário do sistema, identificados por strings. (XX-YY-ZZZZZZZZZ, onde
+  * X são algarismos do DDI, Y são algarismos do DDD e Z são algarismos do número de telefone).
+  *
+  */
 class Telefone {
 // Telefone (XX-YY-ZZZZZZZZZ) todos digitos
 private:
@@ -292,6 +375,12 @@ public:
     Telefone() = default;
 };
 
+/** @brief Classe Senha
+  *
+  * Classe que detém a senha do usuário do sistema, identificada por uma string (XXXXX).
+  *
+  *
+  */
 class Senha {
 //Senha no formato (XXXXX)
 private:
@@ -309,6 +398,12 @@ public:
     Senha() = default;
 };
 
+/** @brief Classe Vagas
+  *
+  * Classe que detém o número de vagas de uma carona, identificado por um int (0, 1, 2, 3 ou 4).
+  *
+  *
+  */
 class Vagas {
 // De 0 a 4 vagas disponiveis
 private:
