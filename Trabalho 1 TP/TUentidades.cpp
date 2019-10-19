@@ -16,6 +16,13 @@ using namespace std;
   * armazenamento foi realizado corretamente.
   */
 
+/**
+  * @brief Método ValidarUsuário
+  *
+  * Método utilizado para testar a classe entidade Usuário, o método verifica se o formato dos dados recebidos corresponde
+  * ao esperado, e se o armazenamento ocorre de forma correta.
+  *
+  */
 void TUUsuario::validarUsuario()
 {
     //Instanciamento
@@ -136,6 +143,13 @@ void TUUsuario::validarUsuario()
 
 }
 
+/**
+  * @brief Método ValidarReserva
+  *
+  * Método utilizado para testar a classe Reserva, o método verifica se o formato dos dados recebidos corresponde ao
+  * esperado, e se o armazenamento ocorre corretamente.
+  *
+  */
 void TUReserva::validarReserva()
 {
     //Instanciamento

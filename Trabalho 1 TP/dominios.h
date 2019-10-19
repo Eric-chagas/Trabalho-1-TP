@@ -36,6 +36,9 @@ public:
     //Construtor
     Assento(char tipo);
     Assento() = default;
+
+    //Validacao
+    void validarTipo(char tipo);
 };
 
 /** @brief Classe Bagagem
@@ -57,6 +60,9 @@ public:
     //Construtor
     Bagagem(int numero);
     Bagagem() = default;
+
+    //Validacao
+    void validarNumero(int numero);
 };
 
 /** @brief Classe Codigo_banco
@@ -64,6 +70,7 @@ public:
   * Sub-classe de Codigo, que detem um código de identificação do banco na carona, identificado por uma string (XXX).
   *
   */
+/*
 class Codigo_banco {
 //Codigo de Banco (XXX)
 private:
@@ -78,13 +85,17 @@ public:
     //Construtor
     Codigo_banco(string codigo);
     Codigo_banco() = default;
-};
 
+    //Validacao
+    void validarCodigo(string codigo);
+};
+*/
 /** @brief Classe Codigo_carona
   *
   * Sub-classe de Codigo, que detém um código de identificação da carona, identificado por uma sring (XXXX).
   *
   */
+  /*
 class Codigo_carona {
 //Codigo de Carona (XXXX)
 private:
@@ -99,13 +110,17 @@ public:
     //Construtor
     Codigo_carona(string codigo);
     Codigo_carona() = default;
-};
 
+    //Validacao
+    void validarCodigo(string codigo);
+};
+*/
 /** @brief Classe Codigo_reserva
   *
   * Sub-classe de Codigo, que detém um código de identificação da reserva, identificado por uma sring (XXXXX).
   *
   */
+  /*
 class Codigo_reserva {
 //Codigo de Reserva (XXXXX)
 private:
@@ -120,8 +135,11 @@ public:
     //Construtor
     Codigo_reserva(string codigo);
     Codigo_reserva() = default;
-};
 
+    //Validacao
+    void validarCodigo(string codigo);
+};
+*/
 /** @brief Classe Cidade
   *
   * Classe que detém o nome de uma cidade, de destino ou partida da carona, identificada por uma string.
@@ -141,6 +159,9 @@ public:
     //Construtor
     Cidade(string cidade);
     Cidade() = default;
+
+    //Validacao
+    void validarCidade(string cidade);
 };
 
 /** @brief Classe Cpf
@@ -162,6 +183,9 @@ public:
     //Construtor
     Cpf(string cpf);
     Cpf() = default;
+
+    //Validacao
+    void validarCpf(string cpf);
 };
 
 /** @brief Classe Data
@@ -183,6 +207,9 @@ public:
     //Construtor
     Data(string data);
     Data() = default;
+
+    //Validacao
+    void validarData(string data);
 };
 
 /** @brief Classe Duracao
@@ -204,6 +231,9 @@ public:
     //Construtor
     Duracao(int duracao);
     Duracao() = default;
+
+    //Validacao
+    void validarDuracao(int duracao);
 };
 
 /** @brief Classe Estado
@@ -225,6 +255,9 @@ public:
     //Construtor
     Estado(string estado);
     Estado() = default;
+
+    //Validacao
+    void validarEstado(string estado);
 };
 
 /** @brief Classe Email
@@ -249,6 +282,10 @@ public:
     //Construtor
     Email(string local, string dominio);
     Email() = default;
+
+    //Validacao
+    void validarLocal(string local);
+    void validarDominio(string dominio);
 };
 
 /** @brief Classe Nome
@@ -270,6 +307,9 @@ public:
     //Construtores
     Nome(string nome);
     Nome() = default;
+
+    //Validacao
+    void validarNome(string nome);
 };
 
 /** @brief Classe Numero_agencia
@@ -278,9 +318,10 @@ public:
   * e um int respectivamente (XXXX-Y, onde X são algarismos do número da agência e Y é o dígito verificador).
   *
   */
+/*
 class Numero_agencia {
 /*Numero de Agencia (XXXX-Y), onde
-X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
+X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)
 private:
     string numero;
     int digito;
@@ -297,16 +338,17 @@ public:
     Numero_agencia(string numero, int digito);
     Numero_agencia() = default;
 };
-
+*/
 /** @brief Classe Numero_conta
   *
   * Sub-classe de Numero, que detém o número da conta e o dígito verificador, identificados por uma string
   * e um int respectivamente (XXXXXX-Y, onde X são algarismos do número da conta e Y é o dígito verificador).
   *
   */
+  /*
 class Numero_conta {
 /*Numero de Conta (XXXXXX-Y), onde
-X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
+X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)
 private:
     string numero;
     int digito;
@@ -323,7 +365,7 @@ public:
     Numero_conta(string numero, int digito);
     Numero_conta() = default;
 };
-
+*/
 /** @brief Classe Preco
   *
   * Classe que detém o preço da carona, identificado por um double.
