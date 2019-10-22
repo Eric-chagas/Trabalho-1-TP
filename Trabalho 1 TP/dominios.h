@@ -38,7 +38,7 @@ public:
     Assento() = default;
 
     //Validacao
-    void validarTipo(char tipo);
+    bool validarTipo(char tipo);
 };
 
 /** @brief Classe Bagagem
@@ -62,15 +62,15 @@ public:
     Bagagem() = default;
 
     //Validacao
-    void validarNumero(int numero);
+    bool validarNumero(int numero);
 };
 
 /** @brief Classe Codigo_banco
   *
-  * Sub-classe de Codigo, que detem um código de identificação do banco na carona, identificado por uma string (XXX).
+  * Classe Codigo_banco, que detem um código de identificação do banco na carona, identificado por uma string (XXX).
   *
   */
-/*
+
 class Codigo_banco {
 //Codigo de Banco (XXX)
 private:
@@ -87,15 +87,14 @@ public:
     Codigo_banco() = default;
 
     //Validacao
-    void validarCodigo(string codigo);
+    bool validarCodigo(string codigo);
 };
-*/
+
 /** @brief Classe Codigo_carona
   *
-  * Sub-classe de Codigo, que detém um código de identificação da carona, identificado por uma sring (XXXX).
+  * Classe Codigo_carona, que detém um código de identificação da carona, identificado por uma sring (XXXX).
   *
   */
-  /*
 class Codigo_carona {
 //Codigo de Carona (XXXX)
 private:
@@ -112,15 +111,15 @@ public:
     Codigo_carona() = default;
 
     //Validacao
-    void validarCodigo(string codigo);
+    bool validarCodigo(string codigo);
 };
-*/
+
 /** @brief Classe Codigo_reserva
   *
-  * Sub-classe de Codigo, que detém um código de identificação da reserva, identificado por uma sring (XXXXX).
+  * Classe Codigo_reserva, que detém um código de identificação da reserva, identificado por uma sring (XXXXX).
   *
   */
-  /*
+
 class Codigo_reserva {
 //Codigo de Reserva (XXXXX)
 private:
@@ -137,9 +136,9 @@ public:
     Codigo_reserva() = default;
 
     //Validacao
-    void validarCodigo(string codigo);
+    bool validarCodigo(string codigo);
 };
-*/
+
 /** @brief Classe Cidade
   *
   * Classe que detém o nome de uma cidade, de destino ou partida da carona, identificada por uma string.
@@ -161,7 +160,7 @@ public:
     Cidade() = default;
 
     //Validacao
-    void validarCidade(string cidade);
+    bool validarCidade(string cidade);
 };
 
 /** @brief Classe Cpf
@@ -185,7 +184,7 @@ public:
     Cpf() = default;
 
     //Validacao
-    void validarCpf(string cpf);
+    bool validarCpf(string cpf);
 };
 
 /** @brief Classe Data
@@ -209,7 +208,7 @@ public:
     Data() = default;
 
     //Validacao
-    void validarData(string data);
+    bool validarData(string data);
 };
 
 /** @brief Classe Duracao
@@ -233,7 +232,7 @@ public:
     Duracao() = default;
 
     //Validacao
-    void validarDuracao(int duracao);
+    bool validarDuracao(int duracao);
 };
 
 /** @brief Classe Estado
@@ -257,7 +256,7 @@ public:
     Estado() = default;
 
     //Validacao
-    void validarEstado(string estado);
+    bool validarEstado(string estado);
 };
 
 /** @brief Classe Email
@@ -284,8 +283,7 @@ public:
     Email() = default;
 
     //Validacao
-    void validarLocal(string local);
-    void validarDominio(string dominio);
+    bool validarEmail(string local, string dominio);
 };
 
 /** @brief Classe Nome
@@ -309,19 +307,19 @@ public:
     Nome() = default;
 
     //Validacao
-    void validarNome(string nome);
+    bool validarNome(string nome);
 };
 
 /** @brief Classe Numero_agencia
   *
-  * Sub-classe de Numero, que detém o número da agência e o dígito verificador, identificados por uma string
+  * Classe que detém o número da agência e o dígito verificador, identificados por uma string
   * e um int respectivamente (XXXX-Y, onde X são algarismos do número da agência e Y é o dígito verificador).
   *
   */
-/*
+
 class Numero_agencia {
 /*Numero de Agencia (XXXX-Y), onde
-X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)
+X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
 private:
     string numero;
     int digito;
@@ -337,18 +335,21 @@ public:
     //Construtor
     Numero_agencia(string numero, int digito);
     Numero_agencia() = default;
+
+    //Validacao
+    bool validarNumero(string numero);
 };
 */
 /** @brief Classe Numero_conta
   *
-  * Sub-classe de Numero, que detém o número da conta e o dígito verificador, identificados por uma string
+  * Classe que detém o número da conta e o dígito verificador, identificados por uma string
   * e um int respectivamente (XXXXXX-Y, onde X são algarismos do número da conta e Y é o dígito verificador).
   *
   */
-  /*
+
 class Numero_conta {
 /*Numero de Conta (XXXXXX-Y), onde
-X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)
+X = DIGITO ; Y = DIGITO VERIFICADOR (calculado por algoritmo)*/
 private:
     string numero;
     int digito;
@@ -364,8 +365,11 @@ public:
     //Construtor
     Numero_conta(string numero, int digito);
     Numero_conta() = default;
+
+    //Validacao
+    bool validarNumero(string numero);
 };
-*/
+
 /** @brief Classe Preco
   *
   * Classe que detém o preço da carona, identificado por um double.
@@ -386,6 +390,9 @@ public:
     //Construtor
     Preco(double preco);
     Preco() = default;
+
+    //Validacao
+    bool validarPreco(double preco);
 };
 
 /** @brief Classe Telefone
@@ -415,6 +422,9 @@ public:
     //Construtor
     Telefone(string ddi, string ddd, string numero);
     Telefone() = default;
+
+    //Validacao
+    bool validarNumero(string ddi, string ddd, string numero);
 };
 
 /** @brief Classe Senha
@@ -438,6 +448,9 @@ public:
     //Construtor
     Senha(string senha);
     Senha() = default;
+
+    //Validacao
+    bool validarSenha(string senha);
 };
 
 /** @brief Classe Vagas
@@ -461,6 +474,9 @@ public:
     //Construtor
     Vagas(int vagas);
     Vagas() = default;
+
+    //Validacao
+    bool validarVagas(int vagas);
 };
 
 
