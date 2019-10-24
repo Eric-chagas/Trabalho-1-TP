@@ -4,7 +4,7 @@
 	"dominios.h"
 	"entidades.h"
 
-1569979867 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/main.cpp
+1569983160 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/main.cpp
 	<iostream>
 	"dominios.h"
 	"entidades.h"
@@ -15,9 +15,9 @@
 	<iostream>
 	"dominios.h"
 
-1569955319 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
+1571942854 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/dominios.h
 
-1569916003 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.h
+1571174196 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/entidades.h
 	"dominios.h"
 
 1569980549 source:/home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUdominios.cpp
@@ -26,7 +26,7 @@
 	"entidades.h"
 	"TUdominios.h"
 
-1569916003 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUdominios.h
+1569984652 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUdominios.h
 	"dominios.h"
 	"entidades.h"
 
@@ -37,7 +37,7 @@
 	"TUdominios.h"
 	"TUentidades.h"
 
-1569937841 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUentidades.h
+1569984673 /home/papercut/Documents/codeblocks/repo/Trabalho 1 TP/TUentidades.h
 	"dominios.h"
 	"entidades.h"
 	"TUdominios.h"

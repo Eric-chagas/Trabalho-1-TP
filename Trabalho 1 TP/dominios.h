@@ -339,7 +339,7 @@ public:
     //Validacao
     bool validarNumero(string numero);
 };
-*/
+
 /** @brief Classe Numero_conta
   *
   * Classe que detém o número da conta e o dígito verificador, identificados por uma string

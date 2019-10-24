@@ -42,6 +42,27 @@ char Assento::getTipo()
     return this->tipo;
 }
 
+/** @brief Método validar
+  *
+  * Método utilizado para checar se o formato dos dados a serem gravados nos objetos corresponderm ao formato correto.
+  */
+bool Assento::validarTipo(char tipo)
+{
+    try {
+        if (tipo != 'D' && tipo != 'T'){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
+}
+
+
+
 //Classe BAGAGEM
 
 /** @brief Método construtor
@@ -70,6 +91,25 @@ void Bagagem::setNumero(int numero)
 int Bagagem::getNumero()
 {
     return this->numero;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Bagagem::validarNumero(int numero)
+{
+    try {
+        if (numero < 0 || numero > 4){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
 }
 
 //Classe Codigo_banco
@@ -102,6 +142,35 @@ string Codigo_banco::getCodigo()
     return this->codigo;
 }
 
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Codigo_banco::validarCodigo(string codigo)
+{
+    bool digito_incorreto = false;
+
+    for (int i = 0; i<3; i++){
+        if((int)codigo[i] < 48 || (int)codigo[i] > 57){
+            digito_incorreto = true;
+        }
+    }
+
+    try {
+        if (codigo.size() != 3 || digito_incorreto == true){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
+}
+
+
+
 //Classe Codigo_carona
 
 /** @brief Método construtor
@@ -131,6 +200,32 @@ void Codigo_carona::setCodigo(string codigo)
 string Codigo_carona::getCodigo()
 {
     return this->codigo;
+}
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Codigo_carona::validarCodigo(string codigo)
+{
+    bool digito_incorreto = false;
+
+    for (int i = 0; i<4; i++){
+        if((int)codigo[i] < 48 || (int)codigo[i] > 57){
+            digito_incorreto = true;
+        }
+    }
+
+    try {
+        if (codigo.size() != 4 || digito_incorreto == true){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
 }
 
 //Classe Codigo_reserva
@@ -163,6 +258,33 @@ string Codigo_reserva::getCodigo()
     return this->codigo;
 }
 
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Codigo_reserva::validarCodigo(string codigo)
+{
+    bool digito_incorreto = false;
+
+    for (int i = 0; i<5; i++){
+        if((int)codigo[i] < 48 || (int)codigo[i] > 57){
+            digito_incorreto = true;
+        }
+    }
+
+    try {
+        if (codigo.size() != 5 || digito_incorreto == true){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
+}
+
 // Classe CIDADE
 
 /** @brief Método construtor
@@ -192,6 +314,45 @@ string Cidade::getCidade()
 {
     return this->cidade;
 }
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Cidade::validarCidade(string cidade)
+{
+    bool caracter_invalido = false, ponto_sem_letra = false, espaco_duplo = false;
+    int numero_de_letras = 0, tamanho = cidade.size();
+
+    for(int i = 0; i < tamanho; i++){
+        if((int)cidade[i] >= 48 && (int)cidade[i] <= 57){
+            numero_de_letras++;
+        }
+        if(((int)cidade[i] < 97 && cidade[i] != '.' && cidade[i] != ' ') || ((int)cidade[i] > 122 && cidade[i] != '.' && cidade[i] != ' ')){
+            caracter_invalido = true;
+        }
+        if((i != 0 && cidade[i] == '.' && (int)cidade[i-1] < 97) || (i != 0 && cidade[i] == '.' && (int)cidade[i-1] > 122)){
+            ponto_sem_letra = true;
+        }
+        if(i < (tamanho - 1) && cidade[i] == ' ' && cidade[i+1] == ' '){
+            espaco_duplo = true;
+        }
+    }
+
+    try {
+        if ((tamanho < 1 || tamanho > 9) || numero_de_letras == 0 || caracter_invalido == true || ponto_sem_letra == true || espaco_duplo == true){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
+}
+
+
 
 // Classe CPF
 
