@@ -384,6 +384,35 @@ string Cpf::getCpf()
     return this->cpf;
 }
 
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Cpf::validarCpf(string cpf)
+{
+    bool caracter_invalido = false;
+    for (int i = 0; i < 14; i++){
+        if (cpf[i] == '.' || cpf[i] == '-'){
+            cpf[i] = '';
+        }
+        if((int)cpf[i] < 48 || (int)cpf[i] > 57){
+           caracter_invalido = true;
+        }
+    }
+
+    try {
+        if(caracter_invalido == true){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato valido!\n";
+        return true;
+
+    } catch (string x){
+        //cout << x;
+        return false;
+    }
+}
+
 //Classe DATA
 
 /** @brief Método construtor
@@ -414,6 +443,16 @@ string Data::getData()
     return this->data;
 }
 
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Data::validarData(string data)
+{
+
+}
+
+
 //Classe DURACAO
 
 /** @brief Método construtor
@@ -442,6 +481,25 @@ void Duracao::setDuracao(int duracao)
 int Duracao::getDuracao()
 {
     return this->duracao;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Duracao::validarDuracao(int duracao)
+{
+    try {
+        if(duracao < 1 || duracao > 48){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato valido!\n";
+        return true;
+
+    } catch (string x){
+        //cout << x;
+        return false;
+    }
 }
 
 //Classe ESTADO
