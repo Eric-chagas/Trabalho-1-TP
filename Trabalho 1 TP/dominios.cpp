@@ -393,9 +393,9 @@ bool Cpf::validarCpf(string cpf)
     bool caracter_invalido = false;
     for (int i = 0; i < 14; i++){
         if (cpf[i] == '.' || cpf[i] == '-'){
-            cpf[i] = '';
+            continue;
         }
-        if((int)cpf[i] < 48 || (int)cpf[i] > 57){
+        else if((int)cpf[i] < 48 || (int)cpf[i] > 57){
            caracter_invalido = true;
         }
     }
@@ -449,6 +449,28 @@ string Data::getData()
   */
 bool Data::validarData(string data)
 {
+    try {
+        //Dia
+        if(data[0] == '0' && (int)data[1] < 49){
+            throw invalid_argument("Formato incorreto.\n");
+
+        } else if (data[0] == '3' && (int)data[1] > 49){
+            throw invalid_argument("Formato incorreto.\n");
+        //Mes
+        } else if(data[3] == '0' && (int)data[4] < 49){
+            throw invalid_argument("Formato incorreto.\n");
+
+        } else if(data[3] == '1' && (int)data[4] > 50){
+            throw invalid_argument("Formato incorreto.\n");
+        //Ano
+        } else if(data[6] == 2)
+        //cout << "Formato valido!\n";
+        return true;
+
+    } catch (string x){
+        //cout << x;
+        return false;
+    }
 
 }
 
