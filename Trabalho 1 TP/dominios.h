@@ -209,6 +209,7 @@ public:
 
     //Validacao
     bool validarData(string data);
+    bool ano_bissexto(int ano);
 };
 
 /** @brief Classe Duracao
@@ -267,23 +268,20 @@ public:
 class Email {
 //local@dominio
 private:
-    string local;
-    string dominio;
+    string email;
 public:
     //Set
-    void setLocal(string local);
-    void setDominio(string dominio);
+    void setEmail(string email);
 
     //Get
-    string getLocal();
-    string getDominio();
+    string getEmail();
 
     //Construtor
-    Email(string local, string dominio);
+    Email(string email);
     Email() = default;
 
     //Validacao
-    bool validarEmail(string local, string dominio);
+    bool validarEmail(string email);
 };
 
 /** @brief Classe Nome

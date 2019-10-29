@@ -443,27 +443,74 @@ string Data::getData()
     return this->data;
 }
 
+/** @brief Método ano_bissexto
+  *
+  * Esse é o método utilizado para verificar a presença de um ano bissexto na data recebida.
+  */
+bool Data::ano_bissexto(int ano)
+{
+    if (ano%4 == 0){
+        if(ano%100 != 0) {
+            return true;
+        } else {
+            if(ano%400 == 0){
+                return true;
+            } else {
+                return false;
+            }
+        }
+    } else{
+        return false;
+    }
+}
+
+
+
 /** @brief (one liner)
   *
   * (documentation goes here)
   */
 bool Data::validarData(string data)
 {
+    bool dia_valido = true, mes_valido = true, ano_valido = true;
+
+    int dia = stoi(data.substr(0, 2));
+    int mes = stoi(data.substr(3, 2));
+    int ano = stoi(data.substr(6));
+
+    //Dia
+    if(mes != 2){
+        if(dia < 1 || dia > 31){
+            dia_valido = false;
+        }
+    } else if (mes == 2) {
+        //Ano bissexto
+        if(ano_bissexto(ano) == true){
+            if(dia < 1 || dia > 29){
+                dia_valido = false;
+            }
+        } else {
+            if(dia < 1 || dia > 28){
+                dia_valido = false;
+            }
+        }
+    }
+
+    //Mês
+    if(mes < 1 || mes > 12){
+        mes_valido = false;
+    }
+
+    //Ano
+    if (ano < 2000 || ano > 2099){
+        ano_valido = false;
+    }
+
+
     try {
-        //Dia
-        if(data[0] == '0' && (int)data[1] < 49){
+        if(dia_valido == false || mes_valido == false || ano_valido == false){
             throw invalid_argument("Formato incorreto.\n");
-
-        } else if (data[0] == '3' && (int)data[1] > 49){
-            throw invalid_argument("Formato incorreto.\n");
-        //Mes
-        } else if(data[3] == '0' && (int)data[4] < 49){
-            throw invalid_argument("Formato incorreto.\n");
-
-        } else if(data[3] == '1' && (int)data[4] > 50){
-            throw invalid_argument("Formato incorreto.\n");
-        //Ano
-        } else if(data[6] == 2)
+        }
         //cout << "Formato valido!\n";
         return true;
 
@@ -554,34 +601,45 @@ string Estado::getEstado()
     return this->estado;
 }
 
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Estado::validarEstado(string estado)
+{
+    //AC, AL, AP, AM, BA, CE, DF, ES, GO, MA, MT, MS, MG, PA, PB, PR, PE,
+    //PI, RJ, RN, RS, RO, RR, SC, SP, SE, TO
+
+    try{
+        if(estado != "AC" && estado != "AL" && estado != "AP" && estado != "AM" && estado != "BA" && estado != "CE" && estado != "DF" && estado != "ES" && estado != "GO" && estado != "MA" && estado != "MT" && estado != "MS" && estado != "MG" && estado != "PA" && estado != "PB" && estado != "PR" && estado != "PE" && estado != "PI" && estado != "RJ" && estado != "RN" && estado != "RS" && estado != "RO" && estado != "RR" && estado != "SC" && estado != "SP" && estado != "SE" && estado != "TO"){
+            throw invalid_argument("Formato incorreto!\n");
+        }
+        //cout << "Formato valido!\n";
+        return true;
+    } catch (string x){
+        //cout << x;
+        return false;
+    }
+}
+
 //Classe EMAIL
 
 /** @brief Método construtor
   *
   * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
- Email::Email(string local, string dominio)
+ Email::Email(string email)
 {
-    this->local = local;
-    this->dominio = dominio;
+    this->email = email;
 }
 
 /** @brief Método set
   *
   * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
-void Email::setLocal(string local)
+void Email::setEmail(string email)
 {
-    this->local = local;
-}
-
-/** @brief Método set
-  *
-  * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
-  */
-void Email::setDominio(string dominio)
-{
-    this->dominio = dominio;
+    this->email = email;
 }
 
 /** @brief Método get
@@ -589,19 +647,25 @@ void Email::setDominio(string dominio)
   * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
   * mesmo tipo do atributo, e o retorna.
   */
-string Email::getLocal()
+string Email::getEmail()
 {
-    return this->local;
+    return this->email;
 }
 
-/** @brief Método get
+/** @brief (one liner)
   *
-  * É o método utilizado para acessar um atributo privado ou protegido de determinado objeto, o método é declarado com o
-  * mesmo tipo do atributo, e o retorna.
+  * (documentation goes here)
   */
-string Email::getDominio()
+bool Email::validarEmail(string email)
 {
-    return this->dominio;
+    //Posição na string email, do @
+    int pos = email.find('@');
+    string local = email.substr(0, pos);
+    string dominio = email.substr(pos+1);
+
+    try{
+
+    }
 }
 
 //Classe NOME
