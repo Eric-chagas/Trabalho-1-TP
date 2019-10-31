@@ -340,7 +340,7 @@ bool Cidade::validarCidade(string cidade)
     }
 
     try {
-        if ((tamanho < 1 || tamanho > 9) || numero_de_letras == 0 || caracter_invalido == true || ponto_sem_letra == true || espaco_duplo == true){
+        if ((tamanho < 1 || tamanho > 10) || numero_de_letras == 0 || caracter_invalido == true || ponto_sem_letra == true || espaco_duplo == true){
             throw invalid_argument("Formato incorreto.\n");
         }
         //cout << "Formato válido!\n"
@@ -662,9 +662,33 @@ bool Email::validarEmail(string email)
     int pos = email.find('@');
     string local = email.substr(0, pos);
     string dominio = email.substr(pos+1);
+    int tamanho_local = local.size(), tamanho_dominio = dominio.size();
+    bool caracter_invalido_local = false, caracter_invalido_dominio = false;
+
+    //Checando o local
+    for (int i = 0; i < tamanho_local; i++){
+        if (((int)local[i] < 97 && local[i] != '.') || ((int)local[i] > 122 && local[i] != '.')){
+            caracter_invalido_local = true;
+        }
+    }
+
+    //Checando o dominio
+    for (int i = 0; i < tamanho_dominio; i++){
+        if(((int)dominio[i] < 97 && dominio[i] != '.') || ((int)dominio[i] > 122 && dominio[i] != '.')){
+            caracter_invalido_dominio = true;
+        }
+    }
 
     try{
+        if(tamanho_dominio > 20 || tamanho_local > 20 || caracter_invalido_dominio == true || caracter_invalido_local == true){
+            throw invalid_argument("Formato incorreto!.\n");
+        }
 
+        //cout << "Formato valido!\n";
+        return true;
+    } catch(string x){
+        //cout << x;
+        return false;
     }
 }
 
@@ -696,6 +720,43 @@ void Nome::setNome(string nome)
 string Nome::getNome()
 {
     return this->nome;
+}
+
+/** @brief (one liner)
+  *
+  * (documentation goes here)
+  */
+bool Nome::validarNome(string nome)
+{
+    bool caracter_invalido = false, ponto_sem_letra = false, espaco_duplo = false;
+    int numero_de_letras = 0, tamanho = nome.size();
+
+    for(int i = 0; i < tamanho; i++){
+        if((int)nome[i] >= 48 && (int)nome[i] <= 57){
+            numero_de_letras++;
+        }
+        if(((int)nome[i] < 97 && nome[i] != '.' && nome[i] != ' ') || ((int)nome[i] > 122 && nome[i] != '.' && nome[i] != ' ')){
+            caracter_invalido = true;
+        }
+        if((i != 0 && nome[i] == '.' && (int)nome[i-1] < 97) || (i != 0 && nome[i] == '.' && (int)nome[i-1] > 122)){
+            ponto_sem_letra = true;
+        }
+        if(i < (tamanho - 1) && nome[i] == ' ' && nome[i+1] == ' '){
+            espaco_duplo = true;
+        }
+    }
+
+    try {
+        if ((tamanho < 1 || tamanho > 20) || numero_de_letras == 0 || caracter_invalido == true || ponto_sem_letra == true || espaco_duplo == true){
+            throw invalid_argument("Formato incorreto.\n");
+        }
+        //cout << "Formato válido!\n"
+        return true;
+
+    } catch (string x) {
+        //cout << x;
+        return false;
+    }
 }
 
 //Classe Numero_agencia
