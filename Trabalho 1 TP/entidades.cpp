@@ -2,6 +2,8 @@
 #include <iostream>
 #include "dominios.h"
 #include "entidades.h"
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -45,10 +47,9 @@ void Usuario::setTelefone(string ddi, string ddd, string numero)
   * ou protegido do objeto, alterando seu valor. Em objetos do tipo entidade, o método set utiliza
   * o método set do atributo desejado (um objeto de tipo domínio) para salvar o valor.
   */
-void Usuario::setEmail(string local, string dominio)
+void Usuario::setEmail(string email)
 {
-    this->email.setLocal(local);
-    this->email.setDominio(dominio);
+    this->email.setEmail(email);
 }
 
 /** @brief Método set (Entidade)
@@ -398,10 +399,10 @@ void Conta::setBanco(string codigo)
   * ou protegido do objeto, alterando seu valor. Em objetos do tipo entidade, o método set utiliza
   * o método set do atributo desejado (um objeto de tipo domínio) para salvar o valor.
   */
-void Conta::setAgencia(string numero, int digito)
+void Conta::setAgencia(string numero)
 {
     this->agencia.setNumero(numero);
-    this->agencia.setDigito(digito);
+    this->agencia.setDigito(numero);
 }
 
 /** @brief Método set (Entidade)
@@ -410,10 +411,10 @@ void Conta::setAgencia(string numero, int digito)
   * ou protegido do objeto, alterando seu valor. Em objetos do tipo entidade, o método set utiliza
   * o método set do atributo desejado (um objeto de tipo domínio) para salvar o valor.
   */
-void Conta::setNumero(string numero, int digito)
+void Conta::setNumero(string numero)
 {
     this->numero.setNumero(numero);
-    this->numero.setDigito(digito);
+    this->numero.setDigito(numero);
 }
 
 /** @brief Método get (entidade)

@@ -324,14 +324,17 @@ private:
 public:
     //Set
     void setNumero(string numero);
-    void setDigito(int digito);
+    void setDigito(string numero);
+
+    //Calcula digito verificador
+    int calculaDigito(string numero);
 
     //Get
     string getNumero();
     int getDigito();
 
     //Construtor
-    Numero_agencia(string numero, int digito);
+    Numero_agencia(string numero);
     Numero_agencia() = default;
 
     //Validacao
@@ -354,14 +357,17 @@ private:
 public:
     //Set
     void setNumero(string numero);
-    void setDigito(int digito);
+    void setDigito(string numero);
+
+    //Calcula digito verificador
+    int calculaDigito(string numero);
 
     //Get
     string getNumero();
     int getDigito();
 
     //Construtor
-    Numero_conta(string numero, int digito);
+    Numero_conta(string numero);
     Numero_conta() = default;
 
     //Validacao

@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+/*
     //Instanciamento das classes de teste Entidades
     TUUsuario teste_usuario;
     TUReserva teste_reserva;
@@ -127,6 +128,7 @@ int main()
     teste_vagas.validarVagas();
 
     cout << "Todas as classes de dominio funcionam como esperado!\n\n";
-
+*/
     return 0;
 }
+

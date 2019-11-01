@@ -1,6 +1,8 @@
 /*Biblioteca de classes Domínio*/
 #include <iostream>
 #include "dominios.h"
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -760,14 +762,15 @@ bool Nome::validarNome(string nome)
 }
 
 //Classe Numero_agencia
+
 /** @brief Método construtor
   *
   * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
- Numero_agencia::Numero_agencia(string numero, int digito)
+ Numero_agencia::Numero_agencia(string numero)
 {
     this->numero = numero;
-    this->digito = digito;
+    this->digito = this->calculaDigito(numero);
 }
 
 /** @brief Método set
@@ -783,16 +786,56 @@ void Numero_agencia::setNumero(string numero)
   *
   * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
-void Numero_agencia::setDigito(int digito)
+void Numero_agencia::setDigito(string numero)
 {
-    this->digito = digito;
+    int digito_verificador = this->calculaDigito(numero);
+    this->digito = digito_verificador;
 }
-/*
+
 int Numero_agencia::calculaDigito(string numero)
 {
+    string nove_fora;
+    int soma = 0, tmp, tamanho_numero, digito = 0;
 
+    reverse(numero.begin(), numero.end());
+    tamanho_numero = numero.size();
+
+    for(int j = 0; j < tamanho_numero; j++){
+        if(j%2 == 0){
+            tmp = (int)numero[j] - 48;
+
+            tmp = tmp*2;
+
+            nove_fora = to_string(tmp);
+
+            while(nove_fora.size() > 1){
+                int tamanho = nove_fora.size(), soma_interna = 0;
+
+                for(int i = 0; i < tamanho; i++){
+                    soma_interna += (int)nove_fora[i] - 48;
+                }
+
+                nove_fora = to_string(soma_interna);
+
+            }
+            soma += stoi(nove_fora);
+        } else{
+            soma += (int)numero[j]-48;
+        }
+    }
+
+    if(soma%10 == 0){
+        digito = 0;
+    } else{
+        while(soma%10 != 0){
+            soma += 1;
+            digito += 1;
+        }
+    }
+
+    return digito;
 }
-*/
+
 
 /** @brief Método get
   *
@@ -820,10 +863,10 @@ int Numero_agencia::getDigito()
   *
   * É o método utilizado para inicializar atributos ou executar métodos no momento de instanciamento do objeto.
   */
- Numero_conta::Numero_conta(string numero, int digito)
+ Numero_conta::Numero_conta(string numero)
 {
     this->numero = numero;
-    this->digito = digito;
+    this->digito = this->calculaDigito(numero);
 }
 
 /** @brief Método set
@@ -839,21 +882,56 @@ void Numero_conta::setNumero(string numero)
   *
   * É o método utilizado para salvar um valor passado pelo usuário em um atributo privado ou protegido do objeto, alterando seu valor.
   */
-void Numero_conta::setDigito(int digito)
+void Numero_conta::setDigito(string numero)
 {
-    this->digito = digito;
+    int digito_verificador = this->calculaDigito(numero);
+    this->digito = digito_verificador;
 }
-/*
+
 int Numero_conta::calculaDigito(string numero)
 {
-    //Algoritmo de Luhn
-    int l = numero.length(), soma = 0;
+    string nove_fora;
+    int soma = 0, tmp, tamanho_numero, digito = 0;
 
-    for (int i = 0; i<l ; i++){
-        numero[i]-49
+    reverse(numero.begin(), numero.end());
+    tamanho_numero = numero.size();
+
+    for(int j = 0; j < tamanho_numero; j++){
+        if(j%2 == 0){
+            tmp = (int)numero[j] - 48;
+
+            tmp = tmp*2;
+
+            nove_fora = to_string(tmp);
+
+            while(nove_fora.size() > 1){
+                int tamanho = nove_fora.size(), soma_interna = 0;
+
+                for(int i = 0; i < tamanho; i++){
+                    soma_interna += (int)nove_fora[i] - 48;
+                }
+
+                nove_fora = to_string(soma_interna);
+
+            }
+            soma += stoi(nove_fora);
+        } else{
+            soma += (int)numero[j]-48;
+        }
     }
+
+    if(soma%10 == 0){
+        digito = 0;
+    } else{
+        while(soma%10 != 0){
+            soma += 1;
+            digito += 1;
+        }
+    }
+
+    return digito;
 }
-*/
+
 
 /** @brief Método get
   *

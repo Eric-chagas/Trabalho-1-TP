@@ -35,7 +35,7 @@ public:
     //Set
     void setNome(string nome);
     void setTelefone(string ddi, string ddd, string numero);
-    void setEmail(string local, string dominio);
+    void setEmail(string email);
     void setSenha(string senha);
     void setCpf(string cpf);
 
@@ -140,8 +140,8 @@ private:
 public:
     //Set
     void setBanco(string codigo);
-    void setAgencia(string numero, int digito);
-    void setNumero(string numero, int digito);
+    void setAgencia(string numero);
+    void setNumero(string numero);
 
     //Get
     Codigo_banco getBanco();
